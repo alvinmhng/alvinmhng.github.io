@@ -17,4 +17,5 @@ Jekyll Garden lets you build a digital garden of atomic notes (working notes) us
 
  Go to <a href="../notes"> notes </a> to see the note feed.
 
- , powered by <a href="https://github.com/Jekyll-Garden/jekyll-garden.github.io">Jekyll Garden</a>
+
+```, powered by <a href="https://github.com/Jekyll-Garden/jekyll-garden.github.io">Jekyll Garden</a>```
