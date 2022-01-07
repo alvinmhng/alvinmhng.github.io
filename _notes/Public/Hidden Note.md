@@ -9,3 +9,12 @@ Tada! You found the hidden note! This note is just like [[Markdown Rendered]], b
 ### How to handle Private notes?
 
 I would recommend using sub-folders inside `_notes` (Eg: Public and Private) and add Private to .gitignore so that Private notes won't get synced to Github. PS: Can you see the backlink to Welcome to the garden? That's backlinking! :)
+
+### Old home page text
+Jekyll Garden lets you build a digital garden of atomic notes (working notes) using Github pages from your Obsidian vault.
+
+ Check out <a href="../posts/how-to">Features </a> to know the the theme and, <a href="../posts/how-to"> Install and Setup </a> to know more.
+
+ Go to <a href="../notes"> notes </a> to see the note feed.
+
+ , powered by <a href="https://github.com/Jekyll-Garden/jekyll-garden.github.io">Jekyll Garden</a>
