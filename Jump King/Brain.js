@@ -1,5 +1,5 @@
 ---
-permalink: /jump-king/Brain.js
+permalink: /jump king/Brain.js
 ---
 
 class AIAction {
