@@ -1,3 +1,7 @@
+---
+permalink: /jump-king/Brain.js
+---
+
 class AIAction {
     constructor(isJump, holdTime, xDirection) {
         this.isJump = isJump;
