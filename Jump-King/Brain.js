@@ -1,6 +1,4 @@
----
-permalink: /jump king/Brain.js
----
+
 
 class AIAction {
     constructor(isJump, holdTime, xDirection) {
