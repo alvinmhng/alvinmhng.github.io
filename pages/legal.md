@@ -1,13 +1,13 @@
 ---
 permalink: /legal
-title: Policy and Support
+title: Policies and Support
 layout: Post
 content-type: eg
 ---
-# Site policy documentation
+## Site policies
 
--   ## [Privacy Policy](https://alvinmhng.tk/privacy)
--   ## [Cookie Notice](https://alvinmhng.tk/cookie)
+-   ### [Privacy Policy](https://alvinmhng.tk/privacy)
+-   ### [Cookie Policy](https://alvinmhng.tk/cookie)
 
 ## Still need help?
-[Contact support](mailto:support@alvinmhng.tk)
+### [Contact support](mailto:support@alvinmhng.tk)
