@@ -2,6 +2,7 @@
 permalink: /legal
 title: Policy and Support
 layout: Post
+content-type: eg
 ---
 # Site policy documentation
 
