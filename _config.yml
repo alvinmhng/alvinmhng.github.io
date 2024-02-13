@@ -20,7 +20,7 @@
 
 
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://alvinmhng.tk" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://alvinmhng.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 #######################################################################
 # Settings related to the Header and your About page go here,such as 
@@ -30,7 +30,7 @@ url: "https://alvinmhng.tk" # the base hostname & protocol for your site, e.g. h
 
 heading: Alvin # Change this 
 copyright:  
-  year: 2023
+  year: 2024
   msg: ©Alvin # This is a mandatory attribute for copyright to be displayed ; If deleting this, edit at footer layout.
 
 
