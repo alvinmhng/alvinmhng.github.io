@@ -6,6 +6,12 @@
   const reset = document.querySelector('.reset-button');
   const readout = document.querySelector('.readout');
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const link = document.querySelector('.experiment-link');
+  const experiments = {
+    balls: ['Gravity', '/lab/gravity/'],
+    flower: ['Greenhouse', '/lab/greenhouse/'],
+    rocket: ['Rocket', '/lab/rocket/']
+  };
   const messages = {
     balls: 'A handful of happy accidents.',
     flower: 'Oh, look. Something grew.',
@@ -36,10 +42,15 @@
     machine.classList.remove('is-running');
     push.disabled = false;
     readout.textContent = messages[machine.dataset.state];
+    const [title, href] = experiments[machine.dataset.state];
+    link.href = href;
+    link.textContent = `Open experiment: ${title} →`;
+    link.hidden = false;
   }
 
   push.addEventListener('click', () => {
     if (running) return;
+    link.hidden = true;
     machine.dataset.state = nextSurprise();
     if (motion.matches) { finish(); return; }
     running = true;
@@ -54,11 +65,15 @@
     timer = null;
     running = false;
     queue = [];
+    link.hidden = true;
     machine.classList.remove('is-running');
     machine.dataset.state = 'idle';
     push.disabled = false;
     readout.textContent = 'Nothing yet. That’s where you come in.';
   });
   motion.addEventListener('change', () => { if (motion.matches && running) finish(); });
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden && running) finish();
+  });
   controls.hidden = false;
 })();
