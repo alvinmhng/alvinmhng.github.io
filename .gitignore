@@ -1,5 +1,4 @@
-_site
-.jekyll-cache
-pages/.DS_Store
-pages/tags.md
-_notes/.obsidian
+output/
+.playwright-cli/
+.DS_Store
+node_modules/
