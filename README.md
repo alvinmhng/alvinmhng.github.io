@@ -10,7 +10,7 @@ Use HTTP rather than opening HTML files directly, because the experiments use Ja
 
 - `/`: illustrated workshop, surprise machine, hidden star drawer, and maker’s notebook.
 - `/lab/gravity/`: up to 20 draggable balls, adjustable gravity, nudge, pause, and reset.
-- `/lab/greenhouse/`: seeded plant artwork with height, branching, flower colour, and standalone SVG download. Reset restores the initial seed.
+- `/lab/greenhouse/`: seeded plant artwork with Daisy, Sunflower, and Cosmos varieties, bloom, height, leaves, colour, Undo, an explicitly saved browser favourite, and standalone SVG download. Reset restores the initial plant and is undoable.
 - `/lab/rocket/`: projectile toy with launch angle, power, trail, pause, and flight results in toy units.
 
 The machine cycles through three surprises without consecutive repeats and links to the matching experiment. It never navigates automatically. The drawer opens by keyboard or pointer and closes with Escape. Contact is a plain email link.
@@ -19,7 +19,7 @@ Shared layout styles are in `assets/css/cabinet.css`; the original machine’s a
 
 ## Accessibility and behaviour
 
-Navigation and explanations work without JavaScript. Interactive controls are disabled until their modules initialise. Reduced motion disables decorative animation, reveals machine results immediately, and starts gravity paused; rockets always require an explicit launch. Hidden tabs suspend simulation updates, and returning does not advance through missed time. State is local to the current page and resets on reload.
+Navigation and explanations work without JavaScript. Interactive controls are disabled until their modules initialise. Reduced motion disables decorative animation, reveals machine results immediately, and starts gravity paused; rockets always require an explicit launch. Hidden tabs suspend simulation updates, and returning does not advance through missed time. Experiment state resets on reload, except for a greenhouse favourite explicitly saved in this browser. Restore retrieves its seed, variety, bloom, colour, height, and leaf count.
 
 ## Verification
 
