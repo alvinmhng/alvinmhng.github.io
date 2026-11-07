@@ -3,17 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#DDF4FF">
+  <meta name="theme-color" content="#f9dccb">
   <meta name="robots" content="noindex">
-  <title>Page not found · Alvin’s workshop</title>
+  <title>Page Not Found</title>
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/css/site.css">
-<link rel="stylesheet" href="/assets/css/cabinet.css"></head>
-<body><main class="not-found">
-  <img class="error-art" src="/assets/favicon.svg" width="145" height="145" alt="A small blue surprise machine">
-  <p class="eyebrow">404 · A little wrong turn</p>
-  <h1>Page not found.</h1>
-  <p>This page isn’t here. There’s a room full of curious little experiments back at the workshop.</p>
-  <a class="home-link" href="/">Back to the workshop →</a>
-</main></body>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Gaegu:wght@700&display=swap">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script type="module" src="/assets/js/room.js"></script>
+</head>
+<body data-page="lost">
+  <div id="stage"></div>
+
+  <header class="top">
+    <a class="mark" href="/" aria-label="alvin, home"></a>
+    <p class="clock">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Z" fill="#fff" stroke="currentColor" stroke-width="2.2"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+      <span id="clock-time">--:--</span>
+      <span class="clock-phase" id="clock-phase"></span>
+    </p>
+  </header>
+
+  <main class="intro">
+    <h1><span class="hl">404.</span> the cat sat on the keyboard.</h1>
+    <p>Whatever page you wanted got knocked off the table. <a href="/">Go back to the cushion →</a></p>  </main>
+  <div class="bubble" id="bubble" role="status" aria-live="polite"></div>
+</body>
 </html>

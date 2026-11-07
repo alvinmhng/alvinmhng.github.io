@@ -1,74 +1,49 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#DDF4FF"><meta name="description" content="A small workshop full of playable experiments, curious objects, and things Alvin has been trying out."><title>Alvin’s workshop</title><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/css/site.css"><script type="module" src="/assets/js/workshop.js"></script><link rel="stylesheet" href="/assets/css/cabinet.css"></head>
-<body class="workshop-page"><header class="site-header"><a class="wordmark" href="/">alvin<span>mhng</span></a><a href="#explore">Explore the cabinet <span aria-hidden="true">↗</span></a></header>
-<main class="workshop-main"><div class="room-intro"><h1>Alvin’s <span>workshop</span></h1><p>Some things to tinker with. A few happy accidents.<br>Make yourself at home.</p></div>
-<section class="room" id="explore" aria-label="Explore Alvin’s illustrated workshop">
-<div class="room-window" aria-hidden="true"><svg viewBox="0 0 220 240"><defs><clipPath id="window-pane"><rect x="7" y="7" width="206" height="224" rx="100"/></clipPath></defs><g clip-path="url(#window-pane)"><rect width="220" height="240" fill="#fff"/><circle cx="157" cy="70" r="24" fill="#FFD45A"/><path d="M0 190Q45 145 90 181T180 177T240 192V240H0Z" fill="#9DCBE8"/><path d="M7 135h206M110 7v224" fill="none" stroke="#183044" stroke-width="4"/></g><rect x="7" y="7" width="206" height="224" rx="100" fill="none" stroke="#183044" stroke-width="4"/></svg></div>
-<a class="room-object jar-object" href="/lab/gravity/"><svg class="object-art " viewBox="0 0 240 230" aria-hidden="true"><g stroke="#183044" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"><ellipse cx="120" cy="211" rx="78" ry="9" fill="#183044" opacity=".1" stroke="none"/><path d="M67 55v23q-19 14-19 37v69q0 20 20 20h104q20 0 20-20v-69q0-23-19-37V55" fill="#fff" fill-opacity=".7"/><rect x="59" y="37" width="122" height="24" rx="9" fill="#FFD45A"/><path d="M66 108v39" stroke="white" stroke-width="8"/><circle cx="87" cy="173" r="25" fill="#F87562"/><circle cx="145" cy="176" r="22" fill="#2864DC"/><circle cx="123" cy="116" r="20" fill="#FFD45A"/><path d="m181 92 13-8m-5 28h16"/><rect x="26" y="216" width="188" height="10" rx="2" fill="#2864DC"/></g></svg><span class="object-label">Gravity <span aria-hidden="true">↗</span></span><small>A little less down to earth.</small></a>
-<a class="room-object plant-object" href="/lab/greenhouse/"><svg class="object-art" viewBox="0 0 240 230" aria-hidden="true"><g stroke="#183044" stroke-width="3" stroke-linejoin="round"><path d="M120 170V80" fill="none" stroke="#397B57" stroke-width="7"/><path d="M120 145Q79 104 65 127Q87 155 120 145Z" fill="#81B87B"/><path d="M120 126Q150 90 173 109Q153 136 120 126Z" fill="#65A66D"/><path d="m120 145-40-16m40-3 39-14" fill="none" stroke="#397B57" stroke-width="2"/><ellipse cx="120" cy="48" rx="9" ry="18" transform="rotate(0 120 77)" fill="#F87562"/><ellipse cx="120" cy="48" rx="9" ry="18" transform="rotate(36 120 77)" fill="#F87562"/><ellipse cx="120" cy="48" rx="9" ry="18" transform="rotate(72 120 77)" fill="#F87562"/><ellipse cx="120" cy="48" rx="9" ry="18" transform="rotate(108 120 77)" fill="#F87562"/><ellipse cx="120" cy="48" rx="9" ry="18" transform="rotate(144 120 77)" fill="#F87562"/><ellipse cx="120" cy="48" rx="9" ry="18" transform="rotate(180 120 77)" fill="#F87562"/><ellipse cx="120" cy="48" rx="9" ry="18" transform="rotate(216 120 77)" fill="#F87562"/><ellipse cx="120" cy="48" rx="9" ry="18" transform="rotate(252 120 77)" fill="#F87562"/><ellipse cx="120" cy="48" rx="9" ry="18" transform="rotate(288 120 77)" fill="#F87562"/><ellipse cx="120" cy="48" rx="9" ry="18" transform="rotate(324 120 77)" fill="#F87562"/><circle cx="120" cy="77" r="15" fill="#FFD45A"/><g fill="#183044" stroke="none"><circle cx="115" cy="74" r="2"/><circle cx="124" cy="73" r="2"/><circle cx="120" cy="82" r="2"/></g><path d="m80 174 11 40h59l11-40" fill="#FFD45A"/><rect x="74" y="160" width="94" height="17" rx="5" fill="#FFD45A"/></g></svg><span class="object-label">Greenhouse <span aria-hidden="true">↗</span></span><small>See what grows.</small></a>
-<section class="machine-station" aria-label="The surprise machine"><p class="machine-note">Can’t choose? Ask the machine.</p><div class="machine" data-state="idle"><svg class="machine-art" viewBox="0 0 600 470" role="img" aria-labelledby="machine-title machine-desc">
-          <title id="machine-title">A blue machine with a glass surprise chamber</title>
-          <desc id="machine-desc">A curious little invention with pipes, a pressure gauge, and a collection tray.</desc>
-          <defs>
-            <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff" stop-opacity=".85"/><stop offset="1" stop-color="#fff" stop-opacity=".2"/></linearGradient>
-            <pattern id="vent" width="12" height="8" patternUnits="userSpaceOnUse"><rect width="5" height="8" rx="2" fill="#183044"/></pattern>
-            <clipPath id="inside"><rect x="184" y="76" width="232" height="225" rx="26"/></clipPath>
-          </defs>
-          <ellipse cx="300" cy="439" rx="205" ry="15" fill="#183044" opacity=".09"/>
-          <g stroke="#183044" stroke-width="4" stroke-linejoin="round">
-            <path d="M180 160h-34q-28 0-28 28v117" fill="none" stroke-width="27"/>
-            <path d="M180 160h-34q-28 0-28 28v117" fill="none" stroke="#FFD45A" stroke-width="19"/>
-            <path d="M422 209h41q25 0 25 25v51" fill="none" stroke-width="27"/>
-            <path d="M422 209h41q25 0 25 25v51" fill="none" stroke="#F87562" stroke-width="19"/>
-            <rect x="99" y="278" width="38" height="39" rx="7" fill="#FFD45A"/>
-            <path d="M103 289h30m-30 13h30" opacity=".35"/>
-            <rect x="468" y="272" width="40" height="21" rx="6" fill="#F87562"/>
-            <path d="M271 56V35h58v21" fill="#F87562"/>
-            <rect x="259" y="23" width="82" height="16" rx="8" fill="#F87562"/>
-            <rect x="174" y="66" width="252" height="245" rx="35" fill="url(#glass)"/>
-            <path d="M193 134v-24q0-24 24-24h34" fill="none" stroke="white" stroke-width="9" stroke-linecap="round"/>
-            <path d="M405 261v18q0 14-14 14" fill="none" stroke="white" stroke-width="6" stroke-linecap="round"/>
-          </g>
-          <g clip-path="url(#inside)">
-            <g class="surprise idle-art">
-              <path d="M279 163c0-27 45-30 45-3 0 19-24 19-24 38" fill="none" stroke="#2864DC" stroke-width="14" stroke-linecap="round"/>
-              <circle cx="300" cy="222" r="8" fill="#2864DC"/>
-              <path d="m231 145 4 9 10 3-10 4-4 10-3-10-10-4 10-3Zm127 77 3 8 9 3-9 3-3 9-3-9-8-3 8-3Z" fill="#F87562"/>
-            </g>
-            <g class="surprise balls-art" stroke="#183044" stroke-width="3">
-              <g class="ball ball-one"><circle cx="252" cy="269" r="25" fill="#F87562"/><path d="M237 260q2-9 12-10" stroke="white" stroke-width="5" stroke-linecap="round" fill="none"/></g>
-              <g class="ball ball-two"><circle cx="305" cy="272" r="22" fill="#FFD45A"/><path d="M292 264q2-8 10-9" stroke="white" stroke-width="5" stroke-linecap="round" fill="none"/></g>
-              <g class="ball ball-three"><circle cx="350" cy="269" r="25" fill="#2864DC"/><path d="M337 260q2-8 10-9" stroke="white" stroke-width="5" stroke-linecap="round" fill="none"/></g>
-            </g>
-            <g class="surprise flower-art" stroke="#183044" stroke-width="3" stroke-linejoin="round">
-              <g class="flower-growth"><path d="M300 266v-74" stroke-width="6"/><path d="M298 245q-42 1-42-31 35-2 42 31Z" fill="#2864DC"/><path d="M302 230q37-1 38-29-29-2-38 29Z" fill="#2864DC"/>
-                <g class="petals" fill="#F87562"><path d="M300 176q-42-8-28-35 16-24 28 4 12-28 28-4 14 27-28 35Z"/><path d="M300 176q11-42 36-25 22 19-7 28 27 15 1 29-28 10-30-32Z"/><path d="M300 176q31 29 9 47-25 14-24-16-24 18-28-10-1-30 43-21Z"/><circle cx="300" cy="177" r="15" fill="#FFD45A"/></g>
-              </g>
-              <path d="m274 263 6 30h40l6-30Z" fill="#FFD45A"/><rect x="269" y="258" width="62" height="10" rx="3" fill="#FFD45A"/>
-            </g>
-            <g class="surprise rocket-art" stroke="#183044" stroke-width="3" stroke-linejoin="round">
-              <g class="rocket"><path class="flame" d="m287 228 13 42 13-42" fill="#FFD45A"/><path d="m283 195-19 30 23-4m30-26 19 30-23-4" fill="#2864DC"/><path d="M283 229v-46q0-30 17-48 17 18 17 48v46Z" fill="white"/><path d="M284 177q3-25 16-42 13 17 16 42Z" fill="#F87562"/><circle cx="300" cy="193" r="10" fill="#DDF4FF"/><path d="M283 221h34"/></g>
-              <path d="m244 125 3 8 9 3-9 3-3 9-3-9-8-3 8-3Zm111 67 3 8 9 3-9 3-3 9-3-9-8-3 8-3Z" fill="#FFD45A" stroke="none"/>
-            </g>
-          </g>
-          <g stroke="#183044" stroke-width="4" stroke-linejoin="round">
-            <rect x="161" y="299" width="278" height="29" rx="10" fill="#2864DC"/>
-            <rect x="143" y="324" width="314" height="94" rx="20" fill="#2864DC"/>
-            <path d="M164 331h269" stroke="white" opacity=".3" stroke-linecap="round"/>
-            <rect x="167" y="417" width="45" height="19" rx="5" fill="#183044"/><rect x="388" y="417" width="45" height="19" rx="5" fill="#183044"/>
-            <circle cx="194" cy="367" r="24" fill="#FFFFFF"/>
-            <path d="M179 365a16 16 0 0 1 30 0" fill="none" stroke="#F87562" stroke-width="5"/>
-            <g class="needle"><path d="m194 367 9-11" stroke-width="3" stroke-linecap="round"/><circle cx="194" cy="367" r="3" fill="#183044"/></g>
-            <rect x="241" y="349" width="118" height="42" rx="9" fill="#183044"/>
-            <rect x="251" y="357" width="98" height="23" rx="4" fill="#DDF4FF" stroke-width="2"/>
-            <path d="M235 386h130l-9 21H244Z" fill="#FFD45A"/>
-            <circle class="indicator" cx="398" cy="355" r="7" fill="#FFD45A" stroke-width="2"/>
-            <rect x="378" y="376" width="41" height="12" fill="url(#vent)" stroke="none"/>
-            <path d="m156 340 5 5m-5 0 5-5m278 58 5 5m-5 0 5-5" stroke="#DDF4FF" stroke-width="2"/>
-          </g>
-        </svg></div><div class="controls" hidden><p class="readout" role="status" aria-live="polite">Nothing yet. That’s where you come in.</p><button class="push-button" type="button">Push for a surprise <span aria-hidden="true">→</span></button><div class="result-slot"><a class="experiment-link" hidden href="/lab/gravity/">Open experiment →</a></div><button class="reset-button" type="button">Reset machine ↺</button></div><noscript><p>The machine needs JavaScript. You can still explore the room’s links.</p></noscript></section>
-<a class="room-object rocket-object" href="/lab/rocket/"><svg class="object-art " viewBox="0 0 240 230" aria-hidden="true"><g stroke="#183044" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"><path d="M47 216h150m-125 0v-25h102v25" fill="#FFD45A"/><g transform="rotate(14 120 115)"><path d="m98 145-29 40 34-8m39-32 29 40-34-8" fill="#2864DC"/><path d="M98 182V86q0-38 22-65 22 27 22 65v96Z" fill="white"/><path d="M99 78q4-34 21-57 17 23 21 57Z" fill="#F87562"/><circle cx="120" cy="110" r="15" fill="#DDF4FF"/><path d="m106 183 14 26 14-26" fill="#FFD45A"/></g><path d="m188 44 3 10 11 3-11 3-3 11-3-11-10-3 10-3Z" fill="#FFD45A"/></g></svg><span class="object-label">Rocket <span aria-hidden="true">↗</span></span><small>A very small space programme.</small></a>
-<a class="room-object notebook-object" href="#about"><svg class="object-art " viewBox="0 0 240 230" aria-hidden="true"><g stroke="#183044" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"><g transform="rotate(-9 120 125)"><rect x="58" y="39" width="133" height="173" rx="9" fill="#F87562"/><path d="M78 40v170"/><rect x="95" y="68" width="77" height="62" rx="3" fill="#fff"/><path d="M109 87h48m-48 13h37m-37 13h43" stroke-width="3"/><path d="M163 171h49l-8 10h-41Z" fill="#FFD45A"/><path d="m163 171-16 5 16 5Z" fill="#fff"/></g></g></svg><span class="object-label">About <span aria-hidden="true">↗</span></span><small>A little about me.</small></a>
-<div class="workbench" aria-hidden="true"><span></span></div><div class="secret"><button class="star-handle" aria-label="Open the little star drawer" aria-expanded="false" aria-controls="secret-drawer" hidden>✳</button><div id="secret-drawer" hidden><svg class="dancing-bolt" viewBox="0 0 80 90" aria-hidden="true"><path d="m24 6 34 7-4 19-11-2-8 38-16-4 8-38-8-2Z" fill="#FFD45A" stroke="#183044" stroke-width="3"/><path d="m21 50-14 6m32-1 13 10M23 67l-9 13m19-10 10 12" fill="none" stroke="#183044" stroke-width="3"/><circle cx="33" cy="19" r="2"/><circle cx="43" cy="21" r="2"/></svg><p>You found the loose bolt.<br>It’s on its lunch break.</p></div></div>
-</section>
-<section class="about-section" id="about" aria-labelledby="about-heading"><div><p class="eyebrow">ABOUT</p><h2 id="about-heading">Hi, I’m Alvin.</h2></div><div><p>Hi! I’m someone who enjoys learning new things, exploring technology, and working on projects that challenge me to think creatively. I’m always curious about how things work and enjoy turning ideas into something practical. This website is a small space for me to share some of my interests, projects, and things I’ve learned along the way.</p><a class="contact-link" href="mailto:alvinmhng@gmail.com">alvinmhng@gmail.com <span aria-hidden="true">↗</span></a></div></section></main><footer class="site-footer"><span>A small corner of the internet.</span><span>Made with curiosity. And a few loose bolts.</span></footer></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f9dccb">
+  <meta name="description" content="A cat lives here. Pets accepted, treats preferred.">
+  <title>A Cat Lives Here</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Gaegu:wght@700&display=swap">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script type="module" src="/assets/js/room.js"></script>
+</head>
+<body>
+  <div id="stage"></div>
+
+  <header class="top">
+    <a class="mark" href="/" aria-label="alvin, home"></a>
+    <p class="clock">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Z" fill="#fff" stroke="currentColor" stroke-width="2.2"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+      <span id="clock-time">--:--</span>
+      <span class="clock-phase" id="clock-phase"></span>
+    </p>
+  </header>
+
+  <main class="intro">
+    <h1>a <span class="hl">cat</span> lives here.</h1>
+    <p>This one is called <strong id="cat-name">…</strong>. Pets accepted, treats preferred, and the yarn is not up for discussion.</p>  </main>
+  <div class="bubble" id="bubble" role="status" aria-live="polite"></div>
+
+  <nav class="dock" aria-label="Cat controls">
+    <button id="treat-btn" type="button">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 16c4-7 15-8 20 0-5 8-16 7-20 0Z" fill="#f7a35c" stroke="#4b3434" stroke-width="2.2" stroke-linejoin="round"/><path d="M6 16 1 11v10Z" fill="#f7a35c" stroke="#4b3434" stroke-width="2.2" stroke-linejoin="round"/><circle cx="20" cy="15" r="1.6" fill="#4b3434"/></svg>
+      treat<span class="label-long">&nbsp;time</span>
+    </button>
+    <span class="sep" aria-hidden="true"></span>
+    <button id="another-btn" type="button">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 27c-1-9 1-15 2-21l6 5h4l6-5c1 6 3 12 2 21Z" fill="#f7b267" stroke="#4b3434" stroke-width="2.2" stroke-linejoin="round"/><circle cx="12.5" cy="18" r="1.7" fill="#4b3434"/><circle cx="19.5" cy="18" r="1.7" fill="#4b3434"/><path d="M14.5 22q1.5 1.5 3 0" fill="none" stroke="#4b3434" stroke-width="1.8" stroke-linecap="round"/></svg>
+      another<span class="label-long">&nbsp;cat</span>
+    </button>
+    <span class="pets" title="Pets given in this browser">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.6A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11Z" fill="#f2637e" stroke="#4b3434" stroke-width="2" stroke-linejoin="round"/></svg>
+      <span id="pets">0</span><span class="sr"> pets given</span>
+    </span>
+  </nav>
+</body>
+</html>
